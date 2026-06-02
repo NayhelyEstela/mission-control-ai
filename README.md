@@ -6,7 +6,7 @@
 
 ---
 
-## 👥 Integrantes
+## Integrantes
 
 | Nome | RM |
 |--------|--------|
@@ -15,7 +15,7 @@
 
 ---
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
 O **Mission Control AI** é um sistema desenvolvido para auxiliar no monitoramento de missões espaciais por meio da análise contínua dos principais indicadores operacionais de uma nave.
 
@@ -41,7 +41,7 @@ O projeto foi desenvolvido utilizando conceitos fundamentais de Python, incluind
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Desenvolver um sistema capaz de identificar problemas operacionais em uma missão espacial e auxiliar na tomada de decisões por meio de análises automatizadas.
 
@@ -49,7 +49,7 @@ O sistema busca simular cenários reais em que falhas de comunicação, energia,
 
 ---
 
-## 🛰️ Indicadores Monitorados
+## Indicadores Monitorados
 
 Cada ciclo da missão possui cinco parâmetros principais:
 
@@ -75,7 +75,7 @@ Estrutura utilizada:
 
 ---
 
-## 📊 Critérios de Avaliação
+## Critérios de Avaliação
 
 ### Temperatura
 
@@ -119,7 +119,7 @@ Estrutura utilizada:
 
 ---
 
-## ⚠️ Sistema de Pontuação de Risco
+## Sistema de Pontuação de Risco
 
 Cada indicador recebe uma pontuação:
 
@@ -141,7 +141,7 @@ A soma dos pontos gera o risco total do ciclo.
 
 ---
 
-## 🤖 Ações Automáticas
+## Ações Automáticas
 
 Quando uma condição de risco é detectada, o sistema simula ações corretivas.
 
@@ -174,7 +174,7 @@ Exemplos:
 
 ---
 
-## 🔍 Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
 O sistema realiza automaticamente:
 
@@ -194,7 +194,7 @@ O sistema realiza automaticamente:
 
 ---
 
-## 📈 Análise de Tendência da Missão
+## Análise de Tendência da Missão
 
 Além da classificação individual de cada ciclo, o sistema realiza uma análise da evolução da missão ao longo do tempo.
 
@@ -221,7 +221,7 @@ Para isso, é comparado o maior nível de risco registrado durante a operação 
 
 ---
 
-## 📈 Cenário Simulado
+## Cenário Simulado
 
 A missão foi construída para representar um cenário realista de degradação gradual dos sistemas seguida por uma recuperação progressiva.
 
@@ -242,7 +242,7 @@ Esse comportamento permite avaliar a capacidade do sistema em detectar problemas
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Python 3
 - Estruturas de dados (listas e matrizes)
@@ -252,7 +252,7 @@ Esse comportamento permite avaliar a capacidade do sistema em detectar problemas
 
 ---
 
-## ▶️ Como Executar
+## Como Executar
 
 1. Instale o Python 3.
 2. Baixe o arquivo `mission_control.py`.
@@ -270,7 +270,7 @@ python3 mission_control.py
 
 ---
 
-## 📋 Exemplo de Saída
+## Exemplo de Saída
 
 O sistema exibe:
 
@@ -282,7 +282,7 @@ O sistema exibe:
 
 ---
 
-## 🎓 Considerações Finais
+## Considerações Finais
 
 O Mission Control AI demonstra como conceitos fundamentais de programação podem ser aplicados na criação de sistemas inteligentes de apoio à decisão.
 
