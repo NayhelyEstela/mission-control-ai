@@ -192,6 +192,22 @@ O sistema realiza automaticamente:
 - Classificação do ciclo
 - Recomendações operacionais
 
+---
+
+## 📈 Análise de Tendência da Missão
+
+Além da classificação individual de cada ciclo, o sistema realiza uma análise da evolução da missão ao longo do tempo.
+
+Para isso, é comparado o maior nível de risco registrado durante a operação com o risco observado no último ciclo monitorado.
+
+### Critérios utilizados
+
+| Situação | Resultado |
+|-----------|------------|
+| Último risco menor que o maior risco registrado | Recuperação após período crítico |
+| Último risco igual ao maior risco registrado | Missão permanece em estado crítico |
+| Último risco superior ao maior risco registrado | Risco crescente |
+
 ### Relatório Final
 
 - Médias dos indicadores
@@ -261,6 +277,7 @@ O sistema exibe:
 - Status detalhado de cada ciclo;
 - Ações executadas automaticamente;
 - Recomendações operacionais;
+- Análise da tendência da missão;
 - Relatório final consolidado da missão.
 
 ---
