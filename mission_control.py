@@ -76,7 +76,7 @@ def analisar_oxigenio(valor):
 def analisar_estabilidade(valor):
     if valor < 40:
         return "CRÍTICO", 2, "Estabilidade operacional crítica"
-    elif 40 <= valor < 69:
+    elif 40 <= valor <= 69:
         return "ATENÇÃO", 1, "Estabilidade operacional reduzida"
     else:
         return "NORMAL", 0, "Estabilidade operacional adequada"
@@ -179,9 +179,9 @@ def recomendacao_geral(risco_total):
             "comunicação e suporte à vida."
         )
 
-def analisar_tendencia(riscos_ciclos_):
+def analisar_tendencia(riscos_ciclos):
 
-    maior_risco = max(riscos_ciclos_)
+    maior_risco = max(riscos_ciclos)
     ultimo_risco = riscos_ciclos[-1]
 
     if ultimo_risco < maior_risco:
