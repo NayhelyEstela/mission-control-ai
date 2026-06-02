@@ -179,13 +179,19 @@ def recomendacao_geral(risco_total):
             "comunicação e suporte à vida."
         )
 
-def analisar_tendencia(primeiro, ultimo):
-    if ultimo > primeiro:
-        return "A missão apresentou tendência de piora."
-    elif ultimo < primeiro:
-        return "A missão apresentou tendência de melhora."
+def analisar_tendencia(riscos_ciclos_):
+
+    maior_risco = max(riscos_ciclos_)
+    ultimo_risco = riscos_ciclos[-1]
+
+    if ultimo_risco < maior_risco:
+        return "Recuperação após período crítico"
+
+    elif ultimo_risco == maior_risco:
+        return "Missão permanece em estado crítico"
+
     else:
-        return "A missão permaneceu estável."
+        return "Risco crescente"
 
 def calcular_media(dados_missao, coluna):
     soma = 0
@@ -215,7 +221,7 @@ for indice, ciclo in enumerate(dados_missao, start=1):
     oxigenio = ciclo[3]
     estabilidade = ciclo[4]
 
-    # Recolectando os resultados de cada análise
+    # Coletando os resultados de cada análise
     status_temp, risco_temp, descricao_temp = analisar_temperatura(temperatura)
     status_com, risco_com, descricao_com = analisar_comunicacao(comunicacao)
     status_bat, risco_bat, descricao_bat = analisar_bateria(bateria)
@@ -307,7 +313,7 @@ print("=" * 60)
 print(f"Missão: {missao}")
 print(f"Equipe: {equipe}")
 print()
-print(f"Quantidade de ciclos analizados: {len(dados_missao)}")
+print(f"Quantidade de ciclos analisados: {len(dados_missao)}")
 print()
 print(f"Média de temperatura: {media_temperatura:.2f}°C")
 print(f"Média de comunicação: {media_comunicacao:.2f}%")
@@ -321,7 +327,7 @@ print(f"Risco médio da missão: {risco_medio:.2f}")
 print(f"Quantidade de ciclos críticos: {quantidade_criticos}")
 
 print("\nTendência da missão:")
-print(analisar_tendencia(riscos_ciclos[0], riscos_ciclos[-1]))
+print(analisar_tendencia(riscos_ciclos))
 
 print("\nPontuação acumulada por área:")
 
@@ -339,11 +345,6 @@ elif risco_medio <= 5:
     print("MISSÃO EM ATENÇÃO")
 else:
     print("MISSÃO CRÍTICA")
-
-tendencia = analisar_tendencia(
-    riscos_ciclos[0],
-    riscos_ciclos[-1]
-)
 
 print("\nConclusão:")
 
