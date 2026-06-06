@@ -1,4 +1,4 @@
-# 🚀 Mission Control AI
+# Mission Control AI
 ## Sistema Inteligente de Monitoramento para Missões Espaciais
 
 ### Global Solution 2026.1
